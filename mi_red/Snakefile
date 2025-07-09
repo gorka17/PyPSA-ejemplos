@@ -1,0 +1,9 @@
+rule all:
+    input:
+        "outputs/red_resuelta.nc"
+
+rule crear_y_resolver_red:
+    output:
+        "outputs/red_resuelta.nc"
+    script:
+        "scripts/crear_red.py"
